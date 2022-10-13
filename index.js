@@ -60,7 +60,7 @@ app.delete('/delete/:id', async (req, res) => {
 
 app.route("/")
     .get(function(req, res) {
-      res.sendFile(process.cwd() + "/views/index.js");
+      res.sendFile(process.cwd() + "/views/app.js");
     })
 
 app.listen(process.env.PORT || 3001, ()=> {
