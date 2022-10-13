@@ -12,4 +12,4 @@ const FoodSchema = new mongoose.Schema({
 });
 
 const Food = mongoose.model("GroceryList", FoodSchema)
-module.exports = Food;
+module.export = Food;
