@@ -58,6 +58,11 @@ app.delete('/delete/:id', async (req, res) => {
     res.send("delete");
 });
 
+app.route("/")
+    .get(function(req, res) {
+      res.sendFile(process.cwd() + "/views/index.js");
+    })
+
 app.listen(process.env.PORT || 3001, ()=> {
     console.log('Server running on port 3001...')
 });
