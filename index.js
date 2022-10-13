@@ -11,7 +11,7 @@ require('dotenv').config()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://newuser:PrakulIsCool@crudappcluster.5xh83fm.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://newuser:PrakulIsCool@crudappcluster.5xh83fm.mongodb.net/groceryfood", {
     useNewURLParser: true,
 });
 
